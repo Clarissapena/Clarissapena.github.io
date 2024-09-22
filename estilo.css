@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sección de introducción */
+.intro {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    height: 100vh; /* Toma el 100% de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Comienza visible */
+    transition: opacity 1s ease; /* Transición para el desvanecimiento */
+    animation: fadeIn 3s ease-in-out; /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sección de bienvenida */
+.hero-section {
+  background-color: #ff8c42; /* Color de fondo naranja */
+  height: 100vh; /* Toma el 100% de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero-content h3 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.cta-button {
+  font-size: 1.2em;
+  background-color: white;
+  color: #ff8c42;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #6d9fd4;
+  color: white;
+}
+
+/* Contenido principal después de la pantalla de bienvenida */
+.content-section {
+  background-color: #79a4d1; 
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  display: none; /* Oculta el contenido al inicio */
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Subtítulo */
+h2 {
+  font-family: 'Merriweather', serif; /* Cambia la fuente a Merriweather */
+  font-size: 20px; /* Ajusta el tamaño de la fuente */
+  color: #ffffff; /* Cambia el color si lo deseas */
+  text-align: center; /* Centra el texto */
+  font-style: italic; /* Pone el texto en cursiva */
+  margin-bottom: 15px;
+}
+
+/* Estilo para el párrafo */
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  width: 80%; /* Ajusta el ancho del texto para una mejor lectura */
+}
+
+/* Galería de imágenes */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre imágenes */
+  margin: 20px 0;
+}
+
+.image-gallery img {
+  width: 300px;  /* Ancho del cuadro contenedor */
+  height: 250px; /* Alto del cuadro contenedor */
+  object-fit: cover; /* Mantiene la proporción sin estirar la imagen */
+}
+
+/* Enlace centrado */
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  color: #ffcc00; /* Color al pasar el ratón */
+}
+
+.titulo-maravillas {
+  font-family: 'Merriweather', serif; /* Cambia la fuente a Merriweather */
+  font-size: 40px; /* Ajusta el tamaño de la fuente */
+  color: #ffffff; /* Cambia el color si lo deseas */
+  text-align: center; /* Centra el texto */
+}
+
+/* Fade-out */
+.fade-out {
+  opacity: 0; /* Se vuelve invisible */
+  transition: opacity 1s ease; /* Transición para el desvanecimiento */
+}
+
+
